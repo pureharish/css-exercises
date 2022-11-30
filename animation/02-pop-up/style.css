@@ -40,8 +40,22 @@ button {
   opacity: 0%;
   text-align: center;
 }
+
+@keyframes popup{
+  from{
+    top: 0%;
+    opacity: 0%;
+  }
+  to{
+    top: 50%;
+    opacity: 30%;
+  }
+}
+
 .popup-modal p {
-  margin-bottom: 24px
+  margin-bottom: 24px;
+  animation-name: popup;
+  animation-duration: 0.5s;
 }
 
 .backdrop {
@@ -50,14 +64,29 @@ button {
   inset: 0;
   background: #000;
   opacity: 0%;
+  animation-name: back;
+  animation-duration: 450ms;
 }
-
+@keyframes back{
+  from{
+    top: 20%;
+    opacity: 30%;
+  }
+  to{
+    top: 0%;
+    opacity: 0%;;
+  }
+}
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  animation-name: popup;
+  animation-duration: 450ms;
 }
 
 .backdrop.show {
   opacity: 30%;
+  animation-name: back;
+  animation-duration: 0.5s;
 }
 

@@ -1,0 +1,16 @@
+.class{
+    background-color: lightpink;
+    font-family: verdana, sans-serif;
+}
+#ID{
+    color: blue;
+    font-size: 36px;
+}
+.two{
+    font-size: 24px;
+}
+#anotherID{
+    background-color: lightgreen;
+    font-size: 24px;
+    font-style: bold;
+}
